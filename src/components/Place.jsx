@@ -9,7 +9,7 @@ export default function Place(props) {
                 <div className='location-section'>
                     <img src={locationIcong} />
                     <p>{props.location}</p>
-                    <a href="">view on Google Maps</a>
+                    <a href={props.googleMapUrl} target="_blank">view on Google Maps</a>
                 </div>
                 <h1>{props.title}</h1>
                 <p>{props.startDate} - {props.endDate}</p>
